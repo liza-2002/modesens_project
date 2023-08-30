@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
-import { Special } from "../../WomenData/Special.js";
+import { trendhomedata} from "../../HomeData/Trend.js";
 import { Link } from "react-router-dom";
 const noOfItems = 7;
 const noOfCards = 4;
@@ -90,7 +90,7 @@ const lineStyle = {
     margin: '0 10px',
   };
 
-const carouselItems = Special.map((e) => (
+const carouselItems = trendhomedata.map((e) => (
   <Container  className="slideDiv">
       <HeartDIv>
         <HeartImg src="https://cdn.modesens.com/static/img/20210601heart.svg"/>
@@ -144,11 +144,13 @@ export default class AutoPlayCarousel extends React.Component {
   render() {
     return (
       <Wrapper>
+           <br/>
+      <br/>
       <br/>
       <div>
       <div style={lineStyle}>
         <div style={horizontalLineStyle}></div>
-        <div style={textStyle}><h3>Special offer</h3></div>
+        <div style={textStyle}><h3>Trending Now</h3></div>
         <div style={horizontalLineStyle}></div>
       </div>
     </div>
@@ -176,9 +178,9 @@ export default class AutoPlayCarousel extends React.Component {
           outsideChevron
           children={carouselItems}
         />
-        <button>shop Now</button>
+        <button>shop more</button>
       </Wrapper>
       
     );
-  }
+}
 }

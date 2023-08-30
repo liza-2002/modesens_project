@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
-import { Brand } from "../../Data/Brand.js";
+import { Brand } from "../../WomenData/Brand.js";
 const noOfItems = 10;
 const noOfCards = 4;
 const autoPlayDelay = 1000;
@@ -65,8 +65,6 @@ export default class AutoPlayCarousel extends React.Component {
   render() {
     return (
       <Wrapper>
-        <h2>TOP WOMEN'S BRANDS</h2>
-        <p>Get the look you want—choose from 12,000+ of the hottest designers</p>
         <ItemsCarousel
           gutter={12}
           numberOfCards={noOfCards}

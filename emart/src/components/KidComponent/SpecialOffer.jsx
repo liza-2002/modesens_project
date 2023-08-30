@@ -1,8 +1,7 @@
 import React from "react";
-
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
-import { Special } from "../../WomenData/Special.js";
+import {  Specialkid } from "../../KidData/Special.js";
 import { Link } from "react-router-dom";
 const noOfItems = 7;
 const noOfCards = 4;
@@ -90,7 +89,7 @@ const lineStyle = {
     margin: '0 10px',
   };
 
-const carouselItems = Special.map((e) => (
+const carouselItems = Specialkid.map((e) => (
   <Container  className="slideDiv">
       <HeartDIv>
         <HeartImg src="https://cdn.modesens.com/static/img/20210601heart.svg"/>

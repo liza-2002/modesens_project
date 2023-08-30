@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
-import { Community } from "../../Data/Community.js";
+import { Community } from "../../WomenData/Community.js";
 const noOfItems = 10;
 const noOfCards = 4;
 const autoPlayDelay = 800;
