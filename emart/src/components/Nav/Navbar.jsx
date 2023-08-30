@@ -6,13 +6,7 @@ export default function Navbar() {
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold fs-4" href="#">
-          <img
-            src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg"
-            width="147"
-            height="20"
-            className="d-inline-block align-top"
-            alt=""
-          />
+            Modesens
           </a>
           <button
             class="navbar-toggler"
@@ -113,7 +107,7 @@ export default function Navbar() {
                     style={{ width: "20px", height: "20px" }} // Adjust the size here
                   />
                 </i>
-              </a> 
+              </a>
             </div>
             <div className="buttons">
               <a href="">
