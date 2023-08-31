@@ -1,3 +1,4 @@
+
 import React from 'react'
 import Navbar from '../components/Nav/Navbar'
 import styled from "styled-components";
@@ -27,6 +28,7 @@ const Right = styled.div`
 const Home = () => {
   return (
     <div style={{ textAlign: "center", zIndex: "-3" }}>
+
     {/* <Navbar/> */}
     <HomeFirstSlide/>
     <br/>
