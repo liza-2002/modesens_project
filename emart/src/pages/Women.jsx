@@ -1,14 +1,12 @@
-
-import React from 'react'
-import Navbar from '../components/Nav/Navbar'
+import React from "react";
 import styled from "styled-components";
 // import Navbar from '../components/Nav/Navbar'
-import HomeFirstSlide from '../components/HomeComponent/HomeFirstSlide'
+import WomenFirstSlide from '../components/WomenComponent/WomenFirstSlide'
 import BrandSlide from '../components/WomenComponent/BrandSlide'
-import TrendNow from '../components/HomeComponent/TrendNow'
-import SpecialOffer from '../components/HomeComponent/SpecialOffer'
+import TrendNow from '../components/WomenComponent/TrendNow'
+import SpecialOffer from '../components/WomenComponent/SpecialOffer'
 import CommunityPost from '../components/WomenComponent/CommunityPost'
-import RoundImage from '../components/HomeComponent/RoundImage'
+import RoundImage from '../components/WomenComponent/RoundImage'
 // import {Footer} from '../components/Footer/Footer'
 import Gut from '../components/Gutter/Gut'
 
@@ -25,12 +23,11 @@ const Right = styled.div`
   padding-left: 10px;
 `;
 
-const Home = () => {
+const Women = () => {
   return (
     <div style={{ textAlign: "center", zIndex: "-3" }}>
-
     {/* <Navbar/> */}
-    <HomeFirstSlide/>
+    <WomenFirstSlide/>
     <br/>
     <br/>
     <br/>
@@ -51,4 +48,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Women;

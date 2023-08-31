@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -6,7 +7,9 @@ export default function Navbar() {
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold fs-4" href="#">
-            Modesens
+            <Link to="/" className="nav-link ms-4">
+              Modesens
+            </Link>
           </a>
           <button
             class="navbar-toggler"
@@ -23,57 +26,61 @@ export default function Navbar() {
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
-                  Home
+                  <Link to="/home" className="nav-link ms-4">
+                    Home
+                  </Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  Women
+                  <Link to="/women" className="nav-link ms-4">
+                    Women
+                  </Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  Men
+                  <Link to="/men" className="nav-link ms-4">
+                    Men
+                  </Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  kids
+                  <Link to="/kid" className="nav-link ms-4">
+                    Kid
+                  </Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  Beauty
+                  <Link to="/beauty" className="nav-link ms-4">
+                    Beauty
+                  </Link>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  Designers
+                <Link to="/community" className="nav-link ms-4">
+                    Community
+                  </Link>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link ms-4" href="#">
-                  Community
-                </a>
-              </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
                   Sales
                 </a>
-              </li>
+              </li> */}
             </ul>
             <div className="buttons">
               <a href="" className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-1">
-                </i>Login
+                <i className="fa fa-sign-in me-1"></i>Login
               </a>
               <a href="" className="btn btn-outline-dark ms-4">
-                <i className="fa fa-user-plus me-1">
-                </i>Register
+                <i className="fa fa-user-plus me-1"></i>Register
               </a>
               <a href="" className="btn btn-outline-dark ms-4">
-                <i className="fa fa-shopping-cart me-1">
-                </i>cart(0)
+                <i className="fa fa-shopping-cart me-1"></i>cart(0)
               </a>
             </div>
             {/* <div className="buttons">
