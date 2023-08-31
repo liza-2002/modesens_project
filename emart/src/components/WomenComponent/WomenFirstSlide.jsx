@@ -46,6 +46,10 @@ export default function WomenFirstSlide() {
          alt="First slide"/>
         </Carousel.Item>
       </Carousel>
+      <br/>
+      <br/>
+      <h2>TOP WOMEN'S BRANDS</h2>
+      <p>Get the look you want—choose from 12,000+ of the hottest designers</p>
     </>
   )
 }

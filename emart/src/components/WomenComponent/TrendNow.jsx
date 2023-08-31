@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import ItemsCarousel from "react-items-carousel";
-import { trenddata } from "../../Data/Trend.js";
+import { trenddata } from "../../WomenData/Trend.js";
 import { Link } from "react-router-dom";
 const noOfItems = 7;
 const noOfCards = 4;
