@@ -9,14 +9,14 @@ import Navbar from "./components/Nav/Navbar";
 import Beauty from './pages/Beauty';
 import Mod from './pages/Mod';
 import Men from './pages/Men'
-
+import Com from './pages/Com'
 function App() {
   return (
     <>
     <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/modesens" element={<Mod />} />
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/" element={<Mod />} />
         {/*<Route path="/products/:id" element={<SingleProduct />}></Route>
          <Route path="/women/:id" element={<SingleProduct />}></Route>*/}
         <Route path="/men" element={<Men />}/>
@@ -24,8 +24,9 @@ function App() {
         <Route path="/women" element={<Women />} />
         <Route path="/beauty" element={<Beauty />} />
        {/*} <Route path="/whymodsens" element={<WhyModesensPage />}></Route>
-        <Route path="/community" element={<Community />} />
-        <Route path="/design" element={<Design />} /> */}
+         <Route path="/design" element={<Design />} /> */}
+        <Route path="/community" element={<Com />} />
+
       </Routes>
       <Footer />
     </>

@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold fs-4" href="#">
-            <Link to="/modesens" className="nav-link ms-4">
+            <Link to="/" className="nav-link ms-4">
               Modesens
             </Link>
           </a>
@@ -26,7 +26,7 @@ export default function Navbar() {
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
-                  <Link to="/" className="nav-link ms-4">
+                  <Link to="/home" className="nav-link ms-4">
                     Home
                   </Link>
                 </a>
@@ -61,7 +61,9 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  Community
+                <Link to="/community" className="nav-link ms-4">
+                    Community
+                  </Link>
                 </a>
               </li>
               {/* <li class="nav-item">
