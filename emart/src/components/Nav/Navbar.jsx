@@ -1,7 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
-export default function Navbar() {
+
+export default function Navbar() {  
+  const navigate = useNavigate();
+
+  const addToCart=(e)=>{
+    e.preventDefault();
+    navigate('/mycart');
+  }
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
@@ -28,6 +36,13 @@ export default function Navbar() {
                 <a class="nav-link active" aria-current="page" href="#">
                   <Link to="/home" className="nav-link ms-4">
                     Home
+                  </Link>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-4" href="#">
+                  <Link to="/allproduct" className="nav-link ms-4">
+                    Product
                   </Link>
                 </a>
               </li>
@@ -61,7 +76,7 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                <Link to="/community" className="nav-link ms-4">
+                  <Link to="/community" className="nav-link ms-4">
                     Community
                   </Link>
                 </a>
@@ -79,7 +94,7 @@ export default function Navbar() {
               <a href="" className="btn btn-outline-dark ms-4">
                 <i className="fa fa-user-plus me-1"></i>Register
               </a>
-              <a href="" className="btn btn-outline-dark ms-4">
+              <a href="" className="btn btn-outline-dark ms-4" onClick={addToCart}>
                 <i className="fa fa-shopping-cart me-1"></i>cart(0)
               </a>
             </div>

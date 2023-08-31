@@ -8,7 +8,8 @@ import SpecialOffer from '../components/MenComponent/SpecialOffer'
 import CommunityPost from '../components/WomenComponent/CommunityPost'
 import RoundImage from '../components/MenComponent/RoundImage'
 // import {Footer} from '../components/Footer/Footer'
-import Gut from '../components/Gutter/Gut'
+//import Gut from '../components/Gutter/Gut'
+import { MenGUt } from "../components/Gutter/MenGUt";
 
 
 const Wrapper = styled.div`
@@ -36,7 +37,7 @@ const Men = () => {
     <br/>
     <RoundImage/>
     <br/>
-    <Gut/>
+    <MenGUt/>
     <br/>
     <TrendNow/>
     <br/>

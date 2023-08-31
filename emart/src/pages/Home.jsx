@@ -1,17 +1,15 @@
-
-import React from 'react'
-import Navbar from '../components/Nav/Navbar'
+import React from "react";
+import Navbar from "../components/Nav/Navbar";
 import styled from "styled-components";
 // import Navbar from '../components/Nav/Navbar'
-import HomeFirstSlide from '../components/HomeComponent/HomeFirstSlide'
-import BrandSlide from '../components/WomenComponent/BrandSlide'
-import TrendNow from '../components/HomeComponent/TrendNow'
-import SpecialOffer from '../components/HomeComponent/SpecialOffer'
-import CommunityPost from '../components/WomenComponent/CommunityPost'
-import RoundImage from '../components/HomeComponent/RoundImage'
+import HomeFirstSlide from "../components/HomeComponent/HomeFirstSlide";
+import BrandSlide from "../components/WomenComponent/BrandSlide";
+import TrendNow from "../components/HomeComponent/TrendNow";
+import SpecialOffer from "../components/HomeComponent/SpecialOffer";
+import CommunityPost from "../components/WomenComponent/CommunityPost";
+import RoundImage from "../components/HomeComponent/RoundImage";
 // import {Footer} from '../components/Footer/Footer'
-import Gut from '../components/Gutter/Gut'
-
+import Gut from "../components/Gutter/Gut";
 
 const Wrapper = styled.div`
   display: flex;
@@ -28,26 +26,25 @@ const Right = styled.div`
 const Home = () => {
   return (
     <div style={{ textAlign: "center", zIndex: "-3" }}>
-
-    {/* <Navbar/> */}
-    <HomeFirstSlide/>
-    <br/>
-    <br/>
-    <br/>
-    <BrandSlide/>
-    <br/>
-    <br/>
-    <RoundImage/>
-    <br/>
-    <Gut/>
-    <br/>
-    <TrendNow/>
-    <br/>
-    <SpecialOffer/>
-    <CommunityPost/>
-    {/* <br/>
+      {/* <Navbar/> */}
+      <HomeFirstSlide />
+      <br />
+      <br />
+      <br />
+      <BrandSlide />
+      <br />
+      <br />
+      <RoundImage />
+      <br />
+      <Gut />
+      <br />
+      <TrendNow />
+      <br />
+      <SpecialOffer />
+      <CommunityPost />
+      {/* <br/>
     <Footer/> */}
-  </div>
+    </div>
   );
 };
 
