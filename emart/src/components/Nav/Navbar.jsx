@@ -41,13 +41,6 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  <Link to="/allproduct" className="nav-link ms-4">
-                    Product
-                  </Link>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-4" href="#">
                   <Link to="/women" className="nav-link ms-4">
                     Women
                   </Link>
@@ -81,6 +74,13 @@ export default function Navbar() {
                   </Link>
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link ms-4" href="#">
+                  <Link to="/allproduct" className="nav-link ms-4">
+                   Shop Now
+                  </Link>
+                </a>
+              </li>
               {/* <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
                   Sales
@@ -95,7 +95,7 @@ export default function Navbar() {
                 <i className="fa fa-user-plus me-1"></i>Register
               </a>
               <a href="" className="btn btn-outline-dark ms-4" onClick={addToCart}>
-                <i className="fa fa-shopping-cart me-1"></i>cart(0)
+                <i className="fa fa-shopping-cart me-1"></i>cart
               </a>
             </div>
             {/* <div className="buttons">
