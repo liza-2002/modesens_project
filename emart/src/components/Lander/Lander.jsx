@@ -1,9 +1,15 @@
 import React from "react";
 import Figure from "react-bootstrap/Figure";
-
+import BrandSlide from "../WomenComponent/BrandSlide"
 export default function Lander() {
   return (
     <Figure>
+
+      <h2>COMPARE AND SHOP WHEREVER YOU GO</h2>
+
+      <p>To unlock all of ModeSens' features and functionality, simply download our App and Browser Extension.</p>
+      <br />
+      <br />
       <Figure.Image
         width={500}
         height={100}
@@ -12,7 +18,6 @@ export default function Lander() {
         style={{ margin: "0 200px 0 0", display: "block", float: "right" }}
       />
       <br></br>
-
       <div
         style={{
           position: "relative",
@@ -47,7 +52,14 @@ export default function Lander() {
             INSTALL NOW
           </button>
         </p>
+
       </div>
+      <h2>PARTNER SPOTLIGHT</h2>
+
+      <p>Discover the largest selection of authentic products from 500+ trusted stores.</p>
+      <br />
+      <br />
+      <BrandSlide />
       <Figure.Image
         width={500}
         height={100}
