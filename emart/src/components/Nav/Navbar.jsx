@@ -88,7 +88,7 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
-                  <Link to="/allproduct" className="nav-link ms-4">
+                <Link to="/allproduct" className="nav-link ms-4" style={{ color: "red" }}>
                     Shop Now
                   </Link>
                 </a>
