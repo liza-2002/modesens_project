@@ -8,14 +8,6 @@ export const trenddata = [
         rate: "$217 - $570",
         st: "25 Stores"
     },
-   
-    {
-        src: "https://is4.fwrdassets.com/images/p/fw/p/KTAH-WD90_V1.jpg",
-        title: "KHAITE",
-        sub: "Mitsi Black Padded Shell Skirt",
-        rate: "$272 - $1980",
-        st: "24 Stores"
-    },
 
     {
         src: "https://cdn-images.farfetch-contents.com/19/52/82/27/19528227_43527459_1000.jpg",
