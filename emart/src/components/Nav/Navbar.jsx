@@ -1,12 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
+const RightIcons = styled.div`
+  display: flex;
+  margin-left: 35%;
+  align-items: center;
+  gap: 15px;
+`;
 
-export default function Navbar() {  
+const RightIconImage = styled.img`
+  height: 20px;
+  width: 20px;
+`;
+
+export default function Navbar() {
   const navigate = useNavigate();
 
-  const addToCart=(e)=>{
+  const addToCart = (e) => {
     e.preventDefault();
     navigate('/mycart');
   }
@@ -77,7 +89,7 @@ export default function Navbar() {
               <li class="nav-item">
                 <a class="nav-link ms-4" href="#">
                   <Link to="/allproduct" className="nav-link ms-4">
-                   Shop Now
+                    Shop Now
                   </Link>
                 </a>
               </li>
@@ -87,15 +99,44 @@ export default function Navbar() {
                 </a>
               </li> */}
             </ul>
+            {/* <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form> */}
+            <div className="rightIcons">
+            <RightIcons>
+              
+              <div>
+                <RightIconImage
+                  src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <RightIconImage
+                  src="https://cdn.modesens.com/static/img/20200612account_b2.svg"
+                  alt=""
+                />
+              </div>
+            </RightIcons>
+          </div>
+              {/* <div>
+                <img  src="https://cdn.modesens.com/static/img/20230710bell.svg"
+                alt=""></img>
+              </div> */}
             <div className="buttons">
-              <a href="" className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-1"></i>Login
-              </a>
-              <a href="" className="btn btn-outline-dark ms-4">
-                <i className="fa fa-user-plus me-1"></i>Register
-              </a>
-              <a href="" className="btn btn-outline-dark ms-4" onClick={addToCart}>
-                <i className="fa fa-shopping-cart me-1"></i>cart
+              <a href="" className="btn ms-4" onClick={addToCart}>
+                <img
+                  src="https://cdn.modesens.com/static/img/20200612shopping_bag2.svg"
+                  alt=""
+                />
               </a>
             </div>
             {/* <div className="buttons">
@@ -141,8 +182,8 @@ export default function Navbar() {
                   />
                 </i>
               </a>
-            </div>
-            <form class="d-flex" role="search">
+            </div>*/}
+            {/* <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
